@@ -3,48 +3,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Soal Matematika Kelas 5 — 15 Butir (Tanpa Kunci)</title>
+  <title>Soal Matematika Kelas 5 — 15 Butir</title>
   <style>
     :root{--bg:#f7f9fb;--card:#ffffff;--accent:#ff8a00;--text:#0b2146}
     *{box-sizing:border-box}
-    body{font-family:Inter, Poppins, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.45;margin:0;background:var(--bg);color:var(--text);padding:32px}
+    body{font-family:Inter, Poppins, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+         line-height:1.45;margin:0;background:var(--bg);color:var(--text);padding:32px}
     .container{max-width:880px;margin:0 auto}
     header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
     h1{font-size:20px;margin:0}
     p.lead{margin:0;color:#334155}
-    .card{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 6px 18px rgba(11,33,70,0.06)}
+    .card{background:var(--card);border-radius:12px;padding:20px;
+          box-shadow:0 6px 18px rgba(11,33,70,0.06)}
     ol{padding-left:18px;margin:0}
-    .question{margin-bottom:18px;padding:12px;border-radius:8px;background:linear-gradient(180deg, rgba(255,138,0,0.03), transparent)}
+    .question{margin-bottom:18px;padding:12px;border-radius:8px;
+              background:linear-gradient(180deg, rgba(255,138,0,0.03), transparent)}
     .qtext{font-weight:600;margin-bottom:8px}
     .options{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-    .option{background:#fff;border:1px solid #e6eef8;padding:8px;border-radius:8px;display:flex;align-items:center;gap:8px}
+    .option{background:#fff;border:1px solid #e6eef8;padding:8px;border-radius:8px;
+            display:flex;align-items:center;gap:8px}
+    .option.correct{border-color:#22c55e;background:#ecfdf5}
+    .option.incorrect{border-color:#ef4444;background:#fef2f2}
     .small{font-size:13px;color:#475569}
-    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:12px;flex-wrap:wrap;gap:8px}
     .btn{background:var(--accent);color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
-    @media(print){body{padding:10mm}header, .meta, .btn{display:none}.card{box-shadow:none}}
+    .result-box{margin-top:16px;font-weight:600}
+    @media(print){body{padding:10mm}header, .meta, .btn, .result-box{display:none}.card{box-shadow:none}}
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div style="width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#ffb777);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700">M5</div>
+      <div style="width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#ffb777);
+                  display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700">M5</div>
       <div>
-        <h1>Soal Matematika Kelas 5 — 15 Butir (Tanpa Kunci)</h1>
-        <p class="lead">Silakan cetak atau gunakan layar untuk mengerjakan. Pilih jawaban yang paling tepat.</p>
+        <h1>Soal Matematika Kelas 5 — 15 Butir</h1>
+        <p class="lead">Silakan pilih jawaban yang paling tepat, lalu klik “Cek Jawaban”.</p>
       </div>
     </header>
 
     <div class="card">
-      <ol>
+      <ol id="quiz">
 
         <li class="question">
           <div class="qtext">235 × (26 × 8) = (a × 26) × b
           <div class="small">Nilai a dan b adalah ....</div></div>
           <div class="options">
-            <label class="option"><input type="radio" name="q1"> a. 200 dan 8</label>
-            <label class="option"><input type="radio" name="q1"> b. 200 dan 35</label>
-            <label class="option"><input type="radio" name="q1"> c. 235 dan 8</label>
-            <label class="option"><input type="radio" name="q1"> d. 235 dan 18</label>
+            <label class="option"><input type="radio" name="q1" value="a"> a. 200 dan 8</label>
+            <label class="option"><input type="radio" name="q1" value="b"> b. 200 dan 35</label>
+            <label class="option"><input type="radio" name="q1" value="c"> c. 235 dan 8</label>
+            <label class="option"><input type="radio" name="q1" value="d"> d. 235 dan 18</label>
           </div>
         </li>
 
@@ -52,10 +60,10 @@
           <div class="qtext">116 + 36 + 44 = 116 + (c + 36)
           <div class="small">Nilai c adalah ....</div></div>
           <div class="options">
-            <label class="option"><input type="radio" name="q2"> a. 36</label>
-            <label class="option"><input type="radio" name="q2"> b. 44</label>
-            <label class="option"><input type="radio" name="q2"> c. 116</label>
-            <label class="option"><input type="radio" name="q2"> d. 34</label>
+            <label class="option"><input type="radio" name="q2" value="a"> a. 36</label>
+            <label class="option"><input type="radio" name="q2" value="b"> b. 44</label>
+            <label class="option"><input type="radio" name="q2" value="c"> c. 116</label>
+            <label class="option"><input type="radio" name="q2" value="d"> d. 34</label>
           </div>
         </li>
 
@@ -63,132 +71,130 @@
           <div class="qtext">187 × 5 = (100 × 5) + (d × 5)
           <div class="small">Nilai d adalah....</div></div>
           <div class="options">
-            <label class="option"><input type="radio" name="q3"> a. 87</label>
-            <label class="option"><input type="radio" name="q3"> b. 100</label>
-            <label class="option"><input type="radio" name="q3"> c. 5</label>
-            <label class="option"><input type="radio" name="q3"> d. 187</label>
+            <label class="option"><input type="radio" name="q3" value="a"> a. 87</label>
+            <label class="option"><input type="radio" name="q3" value="b"> b. 100</label>
+            <label class="option"><input type="radio" name="q3" value="c"> c. 5</label>
+            <label class="option"><input type="radio" name="q3" value="d"> d. 187</label>
           </div>
         </li>
 
         <li class="question">
           <div class="qtext">Hasil operasi hitung dari (12 + 19) × 8 adalah ....</div>
           <div class="options">
-            <label class="option"><input type="radio" name="q4"> a. 240</label>
-            <label class="option"><input type="radio" name="q4"> b. 164</label>
-            <label class="option"><input type="radio" name="q4"> c. 115</label>
-            <label class="option"><input type="radio" name="q4"> d. 248</label>
+            <label class="option"><input type="radio" name="q4" value="a"> a. 240</label>
+            <label class="option"><input type="radio" name="q4" value="b"> b. 164</label>
+            <label class="option"><input type="radio" name="q4" value="c"> c. 115</label>
+            <label class="option"><input type="radio" name="q4" value="d"> d. 248</label>
           </div>
         </li>
 
         <li class="question">
           <div class="qtext">Di bawah ini yang merupakan hasil pangkat dua dari 48² adalah ....</div>
           <div class="options">
-            <label class="option"><input type="radio" name="q5"> a. 2.209</label>
-            <label class="option"><input type="radio" name="q5"> b. 2.294</label>
-            <label class="option"><input type="radio" name="q5"> c. 2.304</label>
-            <label class="option"><input type="radio" name="q5"> d. 2.404</label>
+            <label class="option"><input type="radio" name="q5" value="a"> a. 2.209</label>
+            <label class="option"><input type="radio" name="q5" value="b"> b. 2.294</label>
+            <label class="option"><input type="radio" name="q5" value="c"> c. 2.304</label>
+            <label class="option"><input type="radio" name="q5" value="d"> d. 2.404</label>
           </div>
         </li>
 
         <li class="question">
           <div class="qtext">Hasil dari 15² × 8² ÷ 4² adalah....</div>
           <div class="options">
-            <label class="option"><input type="radio" name="q6"> a. 900</label>
-            <label class="option"><input type="radio" name="q6"> b. 800</label>
-            <label class="option"><input type="radio" name="q6"> c. 850</label>
-            <label class="option"><input type="radio" name="q6"> d. 950</label>
+            <label class="option"><input type="radio" name="q6" value="a"> a. 900</label>
+            <label class="option"><input type="radio" name="q6" value="b"> b. 800</label>
+            <label class="option"><input type="radio" name="q6" value="c"> c. 850</label>
+            <label class="option"><input type="radio" name="q6" value="d"> d. 950</label>
           </div>
         </li>
 
         <li class="question">
-          <div class="qtext">Perhatikan operasi hitung di bawah ini:
-          <div class="small">(13 + 7)² ÷ 5² − 2²
-          Hasil dari operasi hitung di atas adalah ....</div></div>
+          <div class="qtext">(13 + 7)² ÷ 5² − 2² = ....</div>
           <div class="options">
-            <label class="option"><input type="radio" name="q7"> a. 12</label>
-            <label class="option"><input type="radio" name="q7"> b. 391</label>
-            <label class="option"><input type="radio" name="q7"> c. 16</label>
-            <label class="option"><input type="radio" name="q7"> d. 160</label>
+            <label class="option"><input type="radio" name="q7" value="a"> a. 12</label>
+            <label class="option"><input type="radio" name="q7" value="b"> b. 391</label>
+            <label class="option"><input type="radio" name="q7" value="c"> c. 16</label>
+            <label class="option"><input type="radio" name="q7" value="d"> d. 160</label>
           </div>
         </li>
 
         <li class="question">
-          <div class="qtext">Hasil operasi hitung dari (12 + 5)² + 10² − 7² adalah ....</div>
+          <div class="qtext">(12 + 5)² + 10² − 7² = ....</div>
           <div class="options">
-            <label class="option"><input type="radio" name="q8"> a. 289</label>
-            <label class="option"><input type="radio" name="q8"> b. 340</label>
-            <label class="option"><input type="radio" name="q8"> c. 389</label>
-            <label class="option"><input type="radio" name="q8"> d. 350</label>
+            <label class="option"><input type="radio" name="q8" value="a"> a. 289</label>
+            <label class="option"><input type="radio" name="q8" value="b"> b. 340</label>
+            <label class="option"><input type="radio" name="q8" value="c"> c. 389</label>
+            <label class="option"><input type="radio" name="q8" value="d"> d. 350</label>
           </div>
         </li>
 
         <li class="question">
-          <div class="qtext">Hasil operasi hitung dari [(5 × 6)² + 20²] ÷ (4² + 3²) adalah ......</div>
+          <div class="qtext">[(5 × 6)² + 20²] ÷ (4² + 3²) = ....</div>
           <div class="options">
-            <label class="option"><input type="radio" name="q9"> a. 41</label>
-            <label class="option"><input type="radio" name="q9"> b. 76</label>
-            <label class="option"><input type="radio" name="q9"> c. 52</label>
-            <label class="option"><input type="radio" name="q9"> d. 59</label>
+            <label class="option"><input type="radio" name="q9" value="a"> a. 41</label>
+            <label class="option"><input type="radio" name="q9" value="b"> b. 76</label>
+            <label class="option"><input type="radio" name="q9" value="c"> c. 52</label>
+            <label class="option"><input type="radio" name="q9" value="d"> d. 59</label>
           </div>
         </li>
 
         <li class="question">
-          <div class="qtext">Hasil dari √289 adalah ....</div>
+          <div class="qtext">√289 = ....</div>
           <div class="options">
-            <label class="option"><input type="radio" name="q10"> a. 26</label>
-            <label class="option"><input type="radio" name="q10"> b. 17</label>
-            <label class="option"><input type="radio" name="q10"> c. 16</label>
-            <label class="option"><input type="radio" name="q10"> d. 27</label>
+            <label class="option"><input type="radio" name="q10" value="a"> a. 26</label>
+            <label class="option"><input type="radio" name="q10" value="b"> b. 17</label>
+            <label class="option"><input type="radio" name="q10" value="c"> c. 16</label>
+            <label class="option"><input type="radio" name="q10" value="d"> d. 27</label>
           </div>
         </li>
 
         <li class="question">
-          <div class="qtext">Hasil operasi hitung 5² + √225 adalah....</div>
+          <div class="qtext">5² + √225 = ....</div>
           <div class="options">
-            <label class="option"><input type="radio" name="q11"> a. 40</label>
-            <label class="option"><input type="radio" name="q11"> b. 25</label>
-            <label class="option"><input type="radio" name="q11"> c. 50</label>
-            <label class="option"><input type="radio" name="q11"> d. 35</label>
+            <label class="option"><input type="radio" name="q11" value="a"> a. 40</label>
+            <label class="option"><input type="radio" name="q11" value="b"> b. 25</label>
+            <label class="option"><input type="radio" name="q11" value="c"> c. 50</label>
+            <label class="option"><input type="radio" name="q11" value="d"> d. 35</label>
           </div>
         </li>
 
         <li class="question">
-          <div class="qtext">Hasil dari √6.724 adalah ....</div>
+          <div class="qtext">√6.724 = ....</div>
           <div class="options">
-            <label class="option"><input type="radio" name="q12"> a. 83</label>
-            <label class="option"><input type="radio" name="q12"> b. 82</label>
-            <label class="option"><input type="radio" name="q12"> c. 84</label>
-            <label class="option"><input type="radio" name="q12"> d. 86</label>
+            <label class="option"><input type="radio" name="q12" value="a"> a. 83</label>
+            <label class="option"><input type="radio" name="q12" value="b"> b. 82</label>
+            <label class="option"><input type="radio" name="q12" value="c"> c. 84</label>
+            <label class="option"><input type="radio" name="q12" value="d"> d. 86</label>
           </div>
         </li>
 
         <li class="question">
           <div class="qtext">5 km = ... dam</div>
           <div class="options">
-            <label class="option"><input type="radio" name="q13"> a. 5000</label>
-            <label class="option"><input type="radio" name="q13"> b. 50</label>
-            <label class="option"><input type="radio" name="q13"> c. 500</label>
-            <label class="option"><input type="radio" name="q13"> d. 5</label>
+            <label class="option"><input type="radio" name="q13" value="a"> a. 5000</label>
+            <label class="option"><input type="radio" name="q13" value="b"> b. 50</label>
+            <label class="option"><input type="radio" name="q13" value="c"> c. 500</label>
+            <label class="option"><input type="radio" name="q13" value="d"> d. 5</label>
           </div>
         </li>
 
         <li class="question">
           <div class="qtext">4000 dm = ... hm</div>
           <div class="options">
-            <label class="option"><input type="radio" name="q14"> a. 40</label>
-            <label class="option"><input type="radio" name="q14"> b. 400</label>
-            <label class="option"><input type="radio" name="q14"> c. 4</label>
-            <label class="option"><input type="radio" name="q14"> d. 0,4</label>
+            <label class="option"><input type="radio" name="q14" value="a"> a. 40</label>
+            <label class="option"><input type="radio" name="q14" value="b"> b. 400</label>
+            <label class="option"><input type="radio" name="q14" value="c"> c. 4</label>
+            <label class="option"><input type="radio" name="q14" value="d"> d. 0,4</label>
           </div>
         </li>
 
         <li class="question">
           <div class="qtext">30 cm + 700 mm = ... dm</div>
           <div class="options">
-            <label class="option"><input type="radio" name="q15"> a. 1 dm</label>
-            <label class="option"><input type="radio" name="q15"> b. 10 dm</label>
-            <label class="option"><input type="radio" name="q15"> c. 100 dm</label>
-            <label class="option"><input type="radio" name="q15"> d. 1.000 dm</label>
+            <label class="option"><input type="radio" name="q15" value="a"> a. 1 dm</label>
+            <label class="option"><input type="radio" name="q15" value="b"> b. 10 dm</label>
+            <label class="option"><input type="radio" name="q15" value="c"> c. 100 dm</label>
+            <label class="option"><input type="radio" name="q15" value="d"> d. 1.000 dm</label>
           </div>
         </li>
 
@@ -198,20 +204,48 @@
         <div class="small">Total soal: 15 — Jenis: Pilihan ganda</div>
         <div>
           <button class="btn" onclick="window.print()">Cetak</button>
-          <button class="btn" id="downloadBtn" style="margin-left:8px;background:#0b5fff">Download .html</button>
+          <button class="btn" id="downloadBtn" style="background:#0b5fff">Download .html</button>
+          <button class="btn" id="checkBtn" style="background:#16a34a;margin-left:8px">Cek Jawaban</button>
         </div>
       </div>
 
+      <div class="result-box" id="resultBox"></div>
     </div>
   </div>
 
   <script>
+    // Kunci jawaban
+    const answers = {
+      q1:'c', q2:'b', q3:'a', q4:'a', q5:'c', q6:'a', q7:'a',
+      q8:'b', q9:'a', q10:'b', q11:'a', q12:'b', q13:'c', q14:'d', q15:'b'
+    };
+
+    // Cek jawaban
+    document.getElementById('checkBtn').addEventListener('click', () => {
+      let correct = 0;
+      for (let key in answers){
+        const selected = document.querySelector(`input[name=${key}]:checked`);
+        const options = document.querySelectorAll(`input[name=${key}]`);
+        options.forEach(opt => opt.parentElement.classList.remove('correct','incorrect'));
+        if(selected){
+          if(selected.value === answers[key]){
+            correct++;
+            selected.parentElement.classList.add('correct');
+          } else {
+            selected.parentElement.classList.add('incorrect');
+          }
+        }
+      }
+      const resultBox = document.getElementById('resultBox');
+      resultBox.innerHTML = `✅ Jawaban benar: ${correct} dari 15 soal.`;
+    });
+
     // Download current HTML as file
     document.getElementById('downloadBtn').addEventListener('click', function(){
       const blob = new Blob([document.documentElement.outerHTML], {type:'text/html'});
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
-      a.href = url; a.download = 'soal_matematika_kelas5_tanpa_kunci.html';
+      a.href = url; a.download = 'soal_matematika_kelas5.html';
       document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
     });
   </script>
